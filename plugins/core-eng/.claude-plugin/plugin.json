@@ -1,0 +1,6 @@
+{
+  "name": "core-eng",
+  "version": "0.1.0",
+  "description": "The discipline layer for every project: requirements, planning, review, testing, debugging.",
+  "author": { "name": "Gupta Technologies" }
+}

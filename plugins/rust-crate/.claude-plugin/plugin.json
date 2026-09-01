@@ -1,0 +1,8 @@
+{
+  "name": "rust-crate",
+  "version": "0.1.0",
+  "description": "Rust crate engineering with a public-crate bias: module and workspace structure, public API ergonomics, async services, FFI bridges to Flutter, crates.io publishing, and performance and unsafe review.",
+  "author": {
+    "name": "Gupta Technologies"
+  }
+}

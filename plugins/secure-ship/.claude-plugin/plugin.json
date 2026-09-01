@@ -1,0 +1,6 @@
+{
+  "name": "secure-ship",
+  "version": "0.1.0",
+  "description": "Security and release gating for every project: threat models, secrets handling, dependency risk, and the pre-ship go/no-go gate.",
+  "author": { "name": "Gupta Technologies" }
+}

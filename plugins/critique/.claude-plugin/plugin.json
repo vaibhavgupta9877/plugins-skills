@@ -1,0 +1,8 @@
+{
+  "name": "critique",
+  "version": "0.1.0",
+  "description": "Judgement, not construction: UI, motion, accessibility, architecture, API surface, and interface copy reviewed as ranked findings.",
+  "author": {
+    "name": "Gupta Technologies"
+  }
+}

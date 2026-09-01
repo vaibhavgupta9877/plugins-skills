@@ -1,0 +1,8 @@
+{
+  "name": "next-saas",
+  "version": "0.1.0",
+  "description": "Application architecture and backend for a T3 Next.js SaaS: structure, tRPC and Prisma, auth and billing, API design, deploy and observability.",
+  "author": {
+    "name": "Gupta Technologies"
+  }
+}

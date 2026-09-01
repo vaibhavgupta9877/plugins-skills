@@ -1,0 +1,59 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "gupta-skills",
+  "description": "Gupta Technologies engineering skill plugins: discipline, security, critique, and stack craft for Flutter, Rust and Next.js.",
+  "owner": {
+    "name": "Gupta Technologies",
+    "url": "https://guptatechnologies.in"
+  },
+  "plugins": [
+    {
+      "name": "core-eng",
+      "description": "Always-on engineering discipline: requirement interrogation, spec writing, diff review, git hygiene, test strategy, and systematic debugging. Stack-agnostic.",
+      "source": "./plugins/core-eng",
+      "category": "development"
+    },
+    {
+      "name": "secure-ship",
+      "description": "Always-on security and release gating: feature threat models, secrets and env handling, dependency risk, and a pre-ship go/no-go checklist for Flutter, Rust and Next.js.",
+      "source": "./plugins/secure-ship",
+      "category": "security"
+    },
+    {
+      "name": "critique",
+      "description": "Judgment-only review skills: UI, motion, accessibility, architecture, API surface, and interface copy. Reads and ranks findings; never edits.",
+      "source": "./plugins/critique",
+      "category": "development"
+    },
+    {
+      "name": "animate",
+      "description": "Motion craft and mechanics: what deserves animation, timing and easing, scroll motion, design engineering, and Flutter motion taste.",
+      "source": "./plugins/animate",
+      "category": "design"
+    },
+    {
+      "name": "web-ui",
+      "description": "Web interface execution on top of frontend-design: design systems and tokens, landing page craft, design engineering, UX copy, and front-end performance.",
+      "source": "./plugins/web-ui",
+      "category": "design"
+    },
+    {
+      "name": "next-saas",
+      "description": "Next.js T3 SaaS engineering: App Router architecture, tRPC and Prisma patterns, auth and Stripe billing, API design, and deploy and observability.",
+      "source": "./plugins/next-saas",
+      "category": "development"
+    },
+    {
+      "name": "flutter",
+      "description": "Flutter application engineering for Android, Windows and Linux: architecture, UI craft, animation mechanics, desktop platform work, and release.",
+      "source": "./plugins/flutter",
+      "category": "development"
+    },
+    {
+      "name": "rust-crate",
+      "description": "Rust crate engineering with a public-crate bias: structure, API ergonomics, async services, FFI bridges to Flutter, crates.io publishing, and performance and unsafe review.",
+      "source": "./plugins/rust-crate",
+      "category": "development"
+    }
+  ]
+}

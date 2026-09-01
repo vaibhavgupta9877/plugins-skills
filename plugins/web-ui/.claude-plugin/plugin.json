@@ -1,0 +1,8 @@
+{
+  "name": "web-ui",
+  "version": "0.1.0",
+  "description": "The visual and structural layer of web UI: design tokens, landing pages, app screens, interface copy, and Core Web Vitals for Next.js.",
+  "author": {
+    "name": "Gupta Technologies"
+  }
+}
