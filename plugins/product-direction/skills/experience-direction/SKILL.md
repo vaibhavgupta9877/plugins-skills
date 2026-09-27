@@ -1,6 +1,6 @@
 ---
 name: experience-direction
-description: Use when translating approved product/brand context into direction for a new or substantially redesigned product surface or flow. Do NOT use for reference study (Tastemaker) or UI implementation/review (web-ui/*, flutter/*, animate/*, critique/*).
+description: Use when translating approved product/brand context into direction for a new or redesigned product surface/flow. Do NOT use for site architecture (site-architecture), reference study (Tastemaker), or UI implementation/review (web-ui/*, flutter/*, animate/*, critique/*).
 ---
 
 # experience-direction
@@ -31,11 +31,11 @@ Every material design recommendation traces to an evidenced user task, product t
 
 ## Status contract
 
-Use only `Verified`, `Assumption`, or `Unknown` for material claims. Every material bullet begins with exactly one status and includes a source or rationale. `Verified` means direct user/project evidence or an approved reference finding; `Assumption` means a clearly stated design hypothesis; `Unknown` names the evidence needed to resolve it.
+Use only `Verified`, `Assumption`, or `Unknown` for material claims. Every material bullet begins with exactly one status and includes a source or rationale. `Verified` means direct user/project evidence or an approved reference finding; `Assumption` means a clearly stated design hypothesis; `Unknown` names the evidence needed to resolve it. Preserve evidence granularity: “staff” does not verify receptionist/clinician/owner roles, and a voice preference does not establish palette or type. A proposed layout, control, motion choice, or data hierarchy not supplied by a source is an `Assumption`, not an existing product fact. Reference details are `Unknown` without an approved study.
 
 ## Required surface brief
 
-Output exactly this Markdown tree, with the surface name supplied by the brief:
+For every request to create surface direction, an experience plan, or UI guidance—including casual requests like “give me a quick UI direction”—the final answer must consist only of this one structured surface section. Start with `## Surface: <name>`. Include every `###` heading exactly once and in order. Do not add an introduction, freeform proposal, alternate headings such as `Phone` or `Windows`, screen-by-screen appendix, or other headings. Put platform differences in bullets under the relevant headings.
 
 ```markdown
 ## Surface: <name>
@@ -52,7 +52,7 @@ Output exactly this Markdown tree, with the surface name supplied by the brief:
 ### Assumptions and open questions
 ```
 
-Add no other headings. Keep the surface section at or below 500 words. Every material bullet in all sections begins with one allowed status prefix and includes its source/rationale. Every bullet under `### Assumptions and open questions` begins `**Unknown** —` and names the source needed to resolve it. This section is the whole handoff, not implementation code.
+Keep the section at or below 500 words. Every material bullet begins with one allowed status and includes its source/rationale. Every bullet under `### Assumptions and open questions` begins `**Unknown** —` and names the source needed. If a field is absent, keep its heading and state `Unknown` rather than omitting it. Any numeric target (latency, taps, touch size, contrast, or motion timing) must cite an approved product target or named standard; otherwise mark it as an assumption to validate, not an acceptance requirement. Recommendations may be concrete, but mark them Assumption unless the source verifies them. This section is the whole handoff, not implementation code.
 
 ## Quick reference
 
@@ -66,11 +66,9 @@ Add no other headings. Keep the surface section at or below 500 words. Every mat
 ## Example
 
 ```markdown
-### Primary journey
-- **Verified** — The user reviews transactions and approves expenses several times a day. Source: brief.
-
-### Assumptions and open questions
-- **Unknown** — Transaction fields and approval states. Source needed: product spec or current screen.
+### Audience and intent
+- **Verified** — The audience is clinic staff. Source: brief.
+- **Unknown** — Whether this includes front-desk staff, clinicians, or owners. Source needed: role research or product spec.
 ```
 
 ## Common mistakes
