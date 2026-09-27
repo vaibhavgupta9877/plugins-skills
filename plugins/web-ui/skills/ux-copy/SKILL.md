@@ -21,6 +21,8 @@ description: Write interface copy — button labels, error messages, empty state
 
 ## Before writing: detect the voice
 
+If `docs/product-direction.md` contains approved voice guidance, use it alongside the existing screens. If that section is absent, detect voice from existing screens as below; use inline user-provided guidance when present. Keep assumptions provisional and never turn positioning or an unverified metric into product copy.
+
 **Read three or four existing screens and write down the product's actual voice** — register,
 sentence length, whether it uses contractions, how it refers to the user. Then write in that voice.
 

@@ -19,6 +19,8 @@ description: Build Flutter screens and widgets with a deliberate visual system �
 - Desktop platform integration → `flutter-desktop-platform`.
 - Visual review → `critique/ui-critique`.
 
+When `docs/product-direction.md` exists, read the Brand foundation and matching surface section if present. Otherwise, use relevant context from the current user request and approved project docs. If the surface section is absent, proceed from the brief and existing UI; ask only for information that blocks safe implementation. Keep unsupported brand choices unresolved; do not invent a brand or copy a reference's visual system. Preserve platform-specific and adaptive behavior.
+
 ---
 
 ## 1. Design past the Material default

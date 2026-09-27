@@ -24,7 +24,7 @@ description: Review a UI screen, mockup, or component for hierarchy, spacing, ty
 **This skill produces findings. It does not write production code.** If the user then says "fix it,"
 control passes to the relevant building skill.
 
-When `docs/product-direction.md` exists, judge product-specific distinctiveness and cross-screen consistency against its verified brand/surface context. Keep assumptions distinct from facts, and do not treat any palette or type choice as automatically wrong because it resembles a common pattern.
+When `docs/product-direction.md` exists, use its verified Brand foundation and matching surface section when present. If no surface section exists, review the actual screen and known brief, state any resulting scope limit, and do not infer a direction violation from a missing section. Keep assumptions distinct from facts; palette/type resemblance alone is not automatically wrong.
 
 ---
 

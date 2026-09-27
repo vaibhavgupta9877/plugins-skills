@@ -35,6 +35,8 @@ the user cannot answer, make a reasonable assumption, state it in a line, and co
 - **Proof available**: real logos, testimonials, numbers, case studies. What actually exists.
 - **Constraints**: brand voice, existing design direction, mobile priority.
 
+If `docs/product-direction.md` exists, read its Brand foundation and matching surface section when present. If no surface section exists, rely on the current brief and existing site; the missing section does not block page craft. Reuse verified claims, keep assumptions provisional, and do not repeat answered intake. Invoke `experience-direction` only when the user requests a separate surface-direction brief. This skill owns marketing-page structure and conversion decisions.
+
 ---
 
 ## 2. The hero is a thesis

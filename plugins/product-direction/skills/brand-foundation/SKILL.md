@@ -1,6 +1,6 @@
 ---
 name: brand-foundation
-description: Use when a product UI/experience-design task needs an evidence-sourced brand foundation or update. Do NOT use for full product positioning/GTM or market research (product-marketing/customer-research); reuse those outputs here.
+description: Use when product UI/experience design needs a sourced brand foundation. Do NOT use for full marketing/GTM/campaign planning or research (product-marketing/customer-research) or UI implementation/review (web-ui/*, flutter/*, critique/ui-critique).
 ---
 
 # brand-foundation
@@ -9,9 +9,9 @@ description: Use when a product UI/experience-design task needs an evidence-sour
 - Evidence-grounded, design-relevant product and brand context.
 
 ## Does not own
-- Market research execution or campaign strategy → `product-marketing`, `customer-research`.
+- Full product positioning, GTM, campaign strategy, or customer-research execution. Reuse approved host-skill outputs when available; if those skills are unavailable, ask for approved source material rather than reproducing full strategy or research.
 - Surface-specific experience briefs → `experience-direction`.
-- Visual styling, UI implementation, or critique → `web-ui/*`, `flutter/*`, `critique/ui-critique`.
+- Visual styling → `frontend-design`; UI implementation or critique → `web-ui/*`, `flutter/*`, `critique/ui-critique`.
 
 ## Core principle
 

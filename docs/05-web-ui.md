@@ -8,7 +8,7 @@
 
 **Stack assumption:** Next.js App Router + TypeScript + Tailwind + shadcn/ui + Motion. Detect and follow the repo's actual setup; do not impose this if the repo differs.
 
-When `docs/product-direction.md` exists, relevant web skills consume its approved brand/surface context conditionally. `product-direction` sets direction; `web-ui` owns web implementation and execution details.
+When `docs/product-direction.md` exists, relevant web skills consume approved Brand foundation and matching surface sections when present. A missing surface section does not block ordinary implementation: use the current brief and existing UI, and call `experience-direction` only when a separate direction brief is needed. `product-direction` sets direction; `web-ui` owns web implementation and execution details.
 
 ---
 

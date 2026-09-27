@@ -12,7 +12,8 @@ description: Use when translating approved product/brand context into direction 
 
 ## Does not own
 - Product/brand foundation → `brand-foundation`.
-- URL/screenshot reference study → `tastemaker`.
+- Multi-page site architecture/navigation → optional host skill `site-architecture`, when available.
+- URL/screenshot reference study → optional host skill `tastemaker`, when available.
 - UI, motion implementation, or critique → `web-ui/*`, `flutter/*`, `animate/*`, `critique/*`.
 
 ## Core principle
@@ -24,7 +25,7 @@ Every material design recommendation traces to an evidenced user task, product t
 1. Read `docs/product-direction.md` when it exists and use only the matching brand/surface sections. If foundational context is missing, route to `brand-foundation`; do not invent it here.
 2. Classify the surface (marketing narrative, app shell/data view, transactional form, editor, or state screen) and record its actual use frequency and primary user task.
 3. Build the direction around the task and evidence. Choose a visual idea only when it follows from product truth; explicitly choose no motif when none is earned. Do not invent product features, data, roles, metrics, or screens to make a direction feel complete.
-4. For a URL or screenshot, consume an approved Tastemaker study. If none exists, hand off to Tastemaker; do not claim to have inspected visual details. A user request for a reference style is a verified preference, not proof of the reference's content. Transfer only principles that fit the product task; never copy identity, copy, assets, or exact sequences. Read `reference/case-study-principles.md` when its curated examples are relevant.
+4. For a raw URL or screenshot, hand it to Tastemaker for study when that host skill is available and consume its approved findings. If unavailable, request an approved report or screenshot and mark uninspected observations Unknown; use only user-stated preferences in the meantime. Do not claim direct inspection. Transfer only principles that fit the product task; never copy identity, copy, assets, or exact sequences. Read `reference/case-study-principles.md` when its curated examples are relevant.
 5. Recommend interaction or motion only when it helps the stated task. Frequent-use screens default to immediate, scannable states; any exceptional motion needs a named purpose and accessible static/reduced-motion behavior.
 6. Update only the matching surface section in `docs/product-direction.md`. Ask only high-impact questions; label unresolved decisions rather than blocking useful provisional guidance.
 7. Hand implementation to the relevant existing web, Flutter, or motion skill. This skill does not write UI or audit the result.

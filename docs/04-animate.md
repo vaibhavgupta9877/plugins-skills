@@ -10,6 +10,8 @@
 
 **Every skill in this plugin opens with the R4 `frontend-design` directive.** Its restraint guidance ("extra animation contributes to the feeling that the design is AI-generated") is the counterweight to a plugin whose entire purpose is adding animation. Do not let this plugin become an animation-maximiser.
 
+`product-direction/experience-direction` may specify a narrative motion purpose. When `docs/product-direction.md` has a matching surface section, `scroll-motion` reads its constraints; if the section is absent, it uses the current task and its frequency gate, with no cinematic motion by default. It still owns motion implementation and quality gates.
+
 **Sources for the whole plugin (fetch and distil per R7, do not vendor):**
 - `github.com/emilkowalski/skills/tree/main/skills` — `animate`, `animate-vocabulary`, `emil-design-eng`, `find-animation-opportunities`, `improve-animations`
 - `github.com/ConardLi/garden-skills/tree/main/skills/web-design-engineer`

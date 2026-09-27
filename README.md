@@ -1,6 +1,6 @@
 # Gupta Technologies Claude Code Plugins
 
-An installable Claude Code marketplace of engineering, security, critique, motion, web, Next.js, Flutter, and Rust skills. The marketplace contains eight plugins and 44 skills.
+An installable Claude Code marketplace of engineering, security, product direction, critique, motion, web, Next.js, Flutter, and Rust skills. The marketplace contains nine plugins and 46 skills.
 
 ## Install
 
@@ -23,6 +23,12 @@ Install the stack-specific plugins that fit the project:
 /plugin install rust-crate@gupta-skills
 ```
 
+For a UI/experience design task needing a design-ready brand foundation or substantial surface redesign, optionally install:
+
+```text
+/plugin install product-direction@gupta-skills
+```
+
 Claude Code may ask you to confirm an installation scope. Run `/reload-plugins` if prompted to activate newly installed plugins.
 
 ## Plugins
@@ -31,6 +37,7 @@ Claude Code may ask you to confirm an installation scope. Run `/reload-plugins` 
 |---|---|
 | `core-eng` | Requirements, specs, code review, test strategy, debugging, and Git workflow; stack-agnostic. |
 | `secure-ship` | Threat modeling, secrets and environment handling, dependency risk, and production-readiness gates. |
+| `product-direction` | Design-ready brand context and surface direction for product UI/experience work across stacks. |
 | `critique` | Judgment-only reviews of UI, motion, accessibility, architecture, APIs, and copy. |
 | `animate` | Motion decisions and implementation across web and Flutter. |
 | `web-ui` | Web design systems, landing pages, UX copy, design engineering, and performance. |
@@ -41,7 +48,7 @@ Claude Code may ask you to confirm an installation scope. Run `/reload-plugins` 
 ## Repository guide
 
 - `docs/00-INDEX.md` — ecosystem build specification, ownership boundaries, and verification requirements.
-- `docs/01-core-eng.md` through `docs/08-rust-crate.md` — per-plugin specifications.
+- `docs/01-core-eng.md` through `docs/09-product-direction.md` — per-plugin specifications.
 - `plugins/<plugin>/skills/<skill>/SKILL.md` — skill instructions.
 - `plugins/<plugin>/skills/<skill>/reference/` — optional on-demand references.
 

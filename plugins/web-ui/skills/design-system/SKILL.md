@@ -24,7 +24,7 @@ description: Define, extend, or audit the design token system and component libr
 **Stack assumption:** Next.js App Router + TypeScript + Tailwind + shadcn/ui. **Detect and follow the
 repo's actual setup**; do not impose this on a repo that differs.
 
-If `docs/product-direction.md` exists, read its Brand foundation before tokenizing. Only explicit, approved visual decisions (for example, a named colour or type choice) become token values. Voice and product-category context can inform token names, meanings, and density, but do not determine colours, font families, radii, or elevation. For unresolved visual choices, use the approved `frontend-design` direction or flag a decision needed; never infer values from voice alone.
+If `docs/product-direction.md` has a Brand foundation section, read it before tokenizing; if not, use the current brief and the approved `frontend-design` direction. Only explicit, approved visual decisions (for example, a named colour or type choice) become token values. Voice and product-category context can inform token names, meanings, and density, but do not determine colours, font families, radii, or elevation. For unresolved visual choices, flag a decision needed; never infer values from voice alone.
 
 ---
 

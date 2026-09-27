@@ -1,6 +1,6 @@
 # Product Direction Plugin Design
 
-**Status:** Design approved section-by-section; awaiting document review before implementation planning.
+**Status:** Design approved by the user; implementation plan recorded in `docs/superpowers/plans/2026-09-27-product-direction-plugin.md`.
 **Date:** 2026-09-27
 
 ## Goal
@@ -38,7 +38,7 @@ Research was performed on 2026-09-27. References were treated as design evidence
 
 ## Proposed architecture
 
-Add an opt-in plugin named `product-direction` with two Supporting skills. This moves the ecosystem from 8 plugins / 44 skills to 9 / 46, with tier totals of 15 CORE, 22 SUPPORTING, and 9 THIN. It should be used at project start when product/brand context is missing, or for a substantial repositioning, new surface, or redesign. It should not load for routine component edits.
+Add an opt-in plugin named `product-direction` with two Supporting skills. This moves the ecosystem from 8 plugins / 44 skills to 9 / 46, with tier totals of 23 CORE, 22 SUPPORTING, and 1 THIN, matching the per-skill tiers in the plugin specs. It should be used at project start when product/brand context is missing, or for a substantial repositioning, new surface, or redesign. It should not load for routine component edits.
 
 ### `brand-foundation`
 

@@ -2,7 +2,7 @@
 
 **Owner:** Gupta Technologies (guptatechnologies.in)
 **Stacks:** Flutter (Android/Windows/Linux) · Rust crates (incl. public/open-source) · Next.js T3 SaaS (Vercel-primary) · company marketing site
-**Deliverable:** 8 Claude Code plugins, 44 skills.
+**Deliverable:** 9 Claude Code plugins, 46 skills.
 
 You are the building agent. Read this file completely before touching anything. Then build one plugin per spec file, in the order listed.
 
@@ -23,7 +23,7 @@ This is the single biggest defence against the collision problem that broke the 
 **R3 — Every skill body opens with an Owns / Does not own block.** Two short lists. No exceptions.
 
 **R4 — Do not duplicate `frontend-design`.**
-Every UI-facing skill (all of `web-ui`, all of `animate`, `ui-critique`, `motion-critique`, `flutter-ui-craft`) must open its body with:
+Every UI-facing skill (all of `web-ui`, all of `animate`, `ui-critique`, `motion-critique`, `flutter-ui-craft`, and `product-direction/experience-direction`) must open its body with:
 
 > Before doing anything else, read `/mnt/skills/public/frontend-design/SKILL.md` and follow it. It is the source of truth for aesthetic direction, typography, palette, restraint, and interface copy. This skill adds stack-specific execution on top of it and never contradicts it.
 
@@ -83,14 +83,15 @@ If `flutter-motion-craft` needs vocabulary from `animation-vocabulary`, it point
 |---|--------|-----------|--------|-----------|
 | 1 | `core-eng` | **always** | 6 | `01-core-eng.md` |
 | 2 | `secure-ship` | **always** | 4 | `02-secure-ship.md` |
-| 3 | `critique` | **always** | 6 | `03-critique.md` |
-| 4 | `animate` | any UI work | 7 | `04-animate.md` |
-| 5 | `web-ui` | Next.js + company site | 5 | `05-web-ui.md` |
-| 6 | `next-saas` | Next.js only | 5 | `06-next-saas.md` |
-| 7 | `flutter` | Flutter only | 5 | `07-flutter.md` |
-| 8 | `rust-crate` | Rust only | 6 | `08-rust-crate.md` |
+| 3 | `product-direction` | design-ready brand context or new product-surface direction, any stack | 2 | `09-product-direction.md` |
+| 4 | `critique` | **always** | 6 | `03-critique.md` |
+| 5 | `animate` | any UI work | 7 | `04-animate.md` |
+| 6 | `web-ui` | Next.js + company site | 5 | `05-web-ui.md` |
+| 7 | `next-saas` | Next.js only | 5 | `06-next-saas.md` |
+| 8 | `flutter` | Flutter only | 5 | `07-flutter.md` |
+| 9 | `rust-crate` | Rust only | 6 | `08-rust-crate.md` |
 
-**Build order:** 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8. Later plugins reference earlier ones.
+**Build order:** `01` → `02` → `09` → `03` → `04` → `05` → `06` → `07` → `08`. Later plugins reference earlier ones.
 
 ---
 
@@ -98,22 +99,22 @@ If `flutter-motion-craft` needs vocabulary from `animation-vocabulary`, it point
 
 These four lines resolve ~90% of potential collisions:
 
-- **Making vs judging.** `animate`, `web-ui`, `flutter`, `next-saas`, `rust-crate` *build*. `critique` *judges*. A skill never does both.
+- **Direction vs making vs judging.** `product-direction` sets brand and surface direction; `animate`, `web-ui`, `flutter`, `next-saas`, and `rust-crate` build; `critique` judges. A skill never owns both direction and implementation/review.
 - **Diff vs design.** `core-eng/code-review` reads a diff and checks correctness. `critique/*` audits a whole design or architecture with no diff required.
 - **System vs craft.** `flutter/flutter-animation-system` is API knowledge (AnimationController, curves, Hero, custom painters). `animate/flutter-motion-craft` is taste — what to animate, how long, what it should feel like.
-- **Always-on vs stack.** `core-eng`, `secure-ship`, `critique` load in every project. Everything else is opt-in per repo.
+- **Always-on vs opt-in.** `core-eng`, `secure-ship`, `critique` load in every project. `product-direction` and the stack-specific plugins are opt-in per repo.
 
 ---
 
 ## 5. Honest tiering
 
-44 skills is more than you will realistically use. Every skill in the spec files carries a tier:
+46 skills is more than you will realistically use. Every skill in the spec files carries a tier:
 
-- **CORE** (15 skills) — will fire constantly. Write these first, write them well, spend the full 200-line budget if needed.
-- **SUPPORTING** (20 skills) — fire a few times per project. Keep to ~100 lines.
-- **THIN** (9 skills) — narrow scope, may rarely fire. Keep to ~60 lines. If after 60 days a THIN skill has never fired, delete it rather than maintaining it.
+- **CORE** (23 skills) — will fire constantly. Write these first, write them well, spend the full 200-line budget if needed.
+- **SUPPORTING** (22 skills) — fire a few times per project. Keep to ~100 lines.
+- **THIN** (1 skill) — narrow scope, may rarely fire. Keep to ~60 lines. If after 60 days the THIN skill has never fired, delete it rather than maintaining it.
 
-Do not pretend all 44 are equal. Budget effort accordingly.
+Do not pretend all 46 are equal. Budget effort accordingly.
 
 ---
 
@@ -121,8 +122,8 @@ Do not pretend all 44 are equal. Budget effort accordingly.
 
 Only *enabled* plugins load their descriptions. Worst case per project:
 
-- Flutter project: 16 always-on + 7 animate + 5 flutter = **28 descriptions** ≈ 1.0k tokens standing cost.
-- Next.js project: 16 + 7 + 5 + 5 = **33 descriptions** ≈ 1.2k tokens.
+- Flutter project without product-direction: 16 always-on + 7 animate + 5 flutter = **28 descriptions** ≈ 1.0k tokens; with product-direction, add 2 for **30**.
+- Next.js project without product-direction: 16 + 7 + 5 + 5 = **33 descriptions** ≈ 1.2k tokens; with product-direction, add 2 for **35**.
 
 That is acceptable. What is *not* acceptable is three 600-line skill bodies firing at once — 5k+ tokens for one question. R1 is the entire defence. Enforce it.
 
@@ -132,7 +133,7 @@ That is acceptable. What is *not* acceptable is three 600-line skill bodies firi
 
 For each plugin, confirm:
 - [ ] Every `description` states both a positive and a negative trigger.
-- [ ] No two skills across all 8 plugins claim the same trigger phrase.
+- [ ] No two skills across all 9 plugins claim the same trigger phrase.
 - [ ] Every body has Owns / Does not own.
 - [ ] Every UI-facing skill has the R4 `frontend-design` directive as its first instruction.
 - [ ] No `SKILL.md` exceeds 200 lines. Report actual line counts in a table.

@@ -22,6 +22,12 @@ description: Build application UI screens and components in Next.js + Tailwind +
 
 ---
 
+## Product direction input
+
+If `docs/product-direction.md` exists, read the established Brand foundation and matching surface section when present. If the surface section is absent, use the current brief and existing UI; its absence does not block ordinary screen implementation. Keep assumptions provisional, preserve unknowns, and do not repeat questions already answered. Route to `experience-direction` only when the user requests a separate direction brief.
+
+---
+
 ## 1. Load the token system first
 
 **Read `design-system`'s tokens before writing a single style.** If no system exists, build the

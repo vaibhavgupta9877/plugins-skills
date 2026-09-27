@@ -9,7 +9,7 @@
 **Shared output contract (state it in every body):**
 Findings ranked by severity — `blocking` / `should-fix` / `nit`. Each finding: what · where · why it matters · concrete fix. End with **the single most important change**. Never pad with manufactured findings; "this is solid, here are two nits" is a valid and valuable output.
 
-When `docs/product-direction.md` exists, `ui-critique` uses the matching brand/surface section as product-specific evidence while keeping the findings-only contract. `product-direction` defines direction; critique judges the rendered result.
+When `docs/product-direction.md` exists, `ui-critique` uses verified Brand foundation and matching surface context when present, while keeping the findings-only contract. If no surface section exists, it reviews available evidence, states any scope limit, and does not infer a direction violation. `product-direction` defines direction; critique judges the rendered result.
 
 ---
 

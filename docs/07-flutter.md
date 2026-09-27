@@ -8,6 +8,8 @@
 
 **Convention detection is mandatory.** This codebase's state management, routing, and DI choices must be read from the existing project (`pubspec.yaml`, `lib/` structure) before any skill imposes a pattern. If the project is new, `core-eng/grill-me` asks. Never silently pick Riverpod over Bloc.
 
+When `docs/product-direction.md` exists, `flutter-ui-craft` consumes Brand foundation and any matching surface section that is present. If the surface section is absent, it uses the current brief and existing Flutter UI; the missing section does not block routine implementation. It translates available direction through Flutter's adaptive/platform-specific rules. `product-direction` remains cross-stack and does not implement Flutter UI.
+
 ---
 
 ## `flutter-architecture` — CORE

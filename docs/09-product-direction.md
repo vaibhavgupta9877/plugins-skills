@@ -11,12 +11,16 @@
 - `brand-foundation` records concise design-relevant product and brand context, distinguishing verified facts, assumptions, and unknowns.
 - `experience-direction` translates that context into an experience brief for one surface or flow.
 - `web-ui`, `flutter`, and `animate` implement the handoff; `critique` reviews the result.
-- `tastemaker` owns URL/screenshot reference study. This plugin consumes approved findings and does not create a competing study workflow.
-- `product-marketing` and `customer-research` own full positioning, campaign strategy, and research execution; this plugin reuses their approved context rather than replacing it.
+
+**Host-provided skills (not bundled in this marketplace):** `product-marketing`, `customer-research`, `site-architecture`, `tastemaker`, and `frontend-design`. Reuse approved outputs from the optional marketing/research/architecture/reference skills when present; if absent, use approved project documents or the user's brief and do not claim the work was performed. `frontend-design` remains the required aesthetic authority for `experience-direction` under R4; if unavailable, keep palette/type choices unresolved and report the limitation.
+
+- Full positioning, GTM, campaign strategy, and research execution remain with `product-marketing` / `customer-research` when available; this plugin consumes approved context rather than replacing it.
+- Multi-page sitemap/navigation/URL structure remains with `site-architecture` when available; this plugin focuses on a single surface or flow.
+- `tastemaker` owns URL/screenshot reference study when available. This plugin consumes approved findings and does not create a competing study workflow.
 
 ## `brand-foundation` — SUPPORTING
 
-**Description:** `Use when a product UI/experience-design task needs an evidence-sourced brand foundation or update. Do NOT use for full product positioning/GTM or market research (product-marketing/customer-research); reuse those outputs here.`
+**Description:** `Use when product UI/experience design needs a sourced brand foundation. Do NOT use for full marketing/GTM/campaign planning or research (product-marketing/customer-research) or UI implementation/review (web-ui/*, flutter/*, critique/ui-critique).`
 
 **Owns:** evidence-grounded product and brand context needed by design work.
 **Does not own:** market research, campaign strategy, surface experience briefs, visual styling, implementation, or critique.
@@ -43,7 +47,7 @@
 - Ground the surface type, user intent, journey, hierarchy, visual direction, interaction, accessibility/performance, and acceptance criteria in evidence; label hypotheses and unknowns.
 - Numeric acceptance targets require an approved product target or named standard; otherwise keep them as assumptions to validate, not requirements.
 - Use a product-grounded visual idea only when one is earned. A reference can inform principles, never license copying its identity, copy, imagery, or exact interaction sequence.
-- For raw URL/screenshot references, hand off to Tastemaker. Read `plugins/product-direction/skills/experience-direction/reference/case-study-principles.md` only when curated examples are useful.
+- For raw URL/screenshot references, hand off to Tastemaker when available; if unavailable, request approved findings and keep uninspected details `Unknown`. Read `plugins/product-direction/skills/experience-direction/reference/case-study-principles.md` only when curated examples are useful.
 - Produce the exact surface brief structure in `plugins/product-direction/skills/experience-direction/SKILL.md`; do not write UI or review a finished screen.
 
 **[R4] First instruction:** the skill body begins with the exact `frontend-design` directive required by `docs/00-INDEX.md`. That skill remains the aesthetic authority.
@@ -52,7 +56,7 @@
 
 ## Shared artifact
 
-`docs/product-direction.md` belongs to the consuming product repository, not this plugin repository. It contains a Brand foundation section and a separate section for each surface. Preserve approved existing content; update only the relevant section. Every material statement keeps its source/status; no assumption is promoted to a public claim without evidence and user approval.
+`docs/product-direction.md` belongs to the consuming product repository, not this plugin repository. It contains a Brand foundation section and optional sections for individual surfaces. Preserve approved existing content; update only the relevant section. Every material statement keeps its source/status; no assumption is promoted to a public claim without evidence and user approval. Consumers read a surface-specific section only when one exists; a Brand foundation alone is not a surface brief. A missing section does not block routine build/review work: use the current brief and existing UI, and invoke `experience-direction` only when a surface-direction brief is requested or needed.
 
 ## Sources
 

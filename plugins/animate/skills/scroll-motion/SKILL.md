@@ -19,6 +19,8 @@ description: Build scroll-triggered reveals, scroll-scrubbed sequences, parallax
 - Page structure and section order → `web-ui/landing-page-craft` (it specifies the moment; this skill
   builds it).
 
+If `docs/product-direction.md` has a matching surface section, read its motion purposes and constraints. If that section is absent, use the current task and this skill's frequency gate; missing direction is not permission to add narrative or cinematic motion. Any motion remains subject to this skill's accessibility and performance checks.
+
 ---
 
 ## Step 1 — Choose the mode deliberately
