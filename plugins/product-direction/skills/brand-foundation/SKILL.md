@@ -1,6 +1,6 @@
 ---
 name: brand-foundation
-description: Use when establishing or updating product/brand context for a new product, meaningful repositioning, or major redesign. Do NOT use for market research or campaign strategy (product-marketing/customer-research) or UI implementation/copy or critique (web-ui/*, flutter/*, critique/ui-critique).
+description: Use when a product UI/experience-design task needs an evidence-sourced brand foundation or update. Do NOT use for full product positioning/GTM or market research (product-marketing/customer-research); reuse those outputs here.
 ---
 
 # brand-foundation
