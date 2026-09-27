@@ -8,6 +8,8 @@
 
 **Stack assumption:** Next.js App Router + TypeScript + Tailwind + shadcn/ui + Motion. Detect and follow the repo's actual setup; do not impose this if the repo differs.
 
+When `docs/product-direction.md` exists, relevant web skills consume its approved brand/surface context conditionally. `product-direction` sets direction; `web-ui` owns web implementation and execution details.
+
 ---
 
 ## `design-system` — CORE
@@ -19,6 +21,7 @@
 
 **Body must cover:**
 - **[R4] frontend-design directive** — the palette and type *choices* come from there. This skill turns those choices into a system.
+- If `docs/product-direction.md` exists, read approved Brand foundation values; voice/category inform role names and density, not palette/type/radius/elevation. Defer unresolved visual values to `frontend-design` or ask.
 - Layered tokens, three levels: primitive (`blue-500`, `space-4`) → semantic (`color-surface`, `color-danger`, `space-section`) → component (`button-padding-x`). Components consume semantic tokens only. A component referencing a primitive token is a defect.
 - Tailwind v4: define tokens as CSS custom properties in `@theme`. Never hardcode a hex or a px value in a component. Grep for hardcoded values as the primary audit action.
 - Type scale: pick a ratio and commit. Define role names (display, heading-1..3, body, caption, mono/data) rather than sizes at call sites.
