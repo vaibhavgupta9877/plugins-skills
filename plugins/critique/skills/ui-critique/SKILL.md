@@ -24,6 +24,8 @@ description: Review a UI screen, mockup, or component for hierarchy, spacing, ty
 **This skill produces findings. It does not write production code.** If the user then says "fix it,"
 control passes to the relevant building skill.
 
+When `docs/product-direction.md` exists, judge product-specific distinctiveness and cross-screen consistency against its verified brand/surface context. Keep assumptions distinct from facts, and do not treat any palette or type choice as automatically wrong because it resembles a common pattern.
+
 ---
 
 ## Output contract (shared by all critique skills)
@@ -51,21 +53,26 @@ are the parts the user must not break while fixing the rest. Reviews that only a
 2. Near-black ground + a single acid-green or vermilion accent.
 3. Broadsheet layout — hairline rules, zero radius, dense newspaper columns.
 
-**If the design lands on one of these and the brief did not ask for it, that is a `blocking`
-finding.** Not a nit. The reasoning is not snobbery: AI defaults are the average of the training
-data, which is every brand averaged together, which is no brand recognised at all. A templated
-default dilutes the client's identity into "yet another AI page."
+Treat these as diagnostic prompts, not a palette blacklist. First check the brief and approved
+`docs/product-direction.md` when present. **A resemblance alone is never a `blocking` finding.**
+When no product-specific rationale is evidenced and the pattern plausibly dilutes identity, report
+`should-fix` and give one concrete grounding or differentiation suggestion. Raise to `blocking` only
+when the pattern materially contradicts verified direction or demonstrably harms hierarchy,
+readability, trust, accessibility, or performance. If approved direction specifies the style and the
+execution fits, report no finding for that style.
 
-The one legitimate exception is that the brief or brand spec calls for it — then it is a signature,
-not slop. If the brief pinned the direction, the brief wins; ask rather than assume.
-
-Adjacent tells worth flagging at the same bar: purple-to-pink-to-blue "tech" gradient, rounded card
-with a coloured left-border accent, emoji standing in for icons, AI-drawn SVG humans, Inter/Roboto/
-system-ui carrying the display role, cyber-neon on `#0D1117`, fabricated stats and fake logo walls.
+Adjacent tells worth checking with the same evidence standard: purple-to-pink-to-blue "tech" gradient,
+rounded card with a coloured left-border accent, emoji standing in for icons, AI-drawn SVG humans,
+Inter/Roboto/system-ui carrying the display role, cyber-neon on `#0D1117`, fabricated stats, and fake
+logo walls. Fabricated proof or inaccessible UI may be `blocking` because of its direct harm, not
+because it resembles a style pattern.
 
 Then ask the harder version: **would this same design have come out for a different brief in the same
-category?** If yes, the design has no point of view yet. Say so, and name what in the subject's own
-world — its materials, instruments, artifacts, vernacular — it should have been built from instead.
+category?** If yes, report `should-fix` when no product-specific rationale is evidenced, and name a
+subject-specific material, instrument, artifact, or vernacular that could ground it. A generic-feeling
+direction alone is not `blocking` unless it also causes a material task, trust, or accessibility harm.
+Do not infer competing signatures or add token/documentation nits without visible evidence. If the
+honest result is no finding, say so and stop.
 
 ---
 

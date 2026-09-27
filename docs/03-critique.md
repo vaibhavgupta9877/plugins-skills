@@ -9,6 +9,8 @@
 **Shared output contract (state it in every body):**
 Findings ranked by severity — `blocking` / `should-fix` / `nit`. Each finding: what · where · why it matters · concrete fix. End with **the single most important change**. Never pad with manufactured findings; "this is solid, here are two nits" is a valid and valuable output.
 
+When `docs/product-direction.md` exists, `ui-critique` uses the matching brand/surface section as product-specific evidence while keeping the findings-only contract. `product-direction` defines direction; critique judges the rendered result.
+
 ---
 
 ## `ui-critique` — CORE
@@ -20,7 +22,7 @@ Findings ranked by severity — `blocking` / `should-fix` / `nit`. Each finding:
 
 **Body must cover:**
 - **[R4] First read `/mnt/skills/public/frontend-design/SKILL.md`.** Judge against its standard: is there a real point of view, or is this the templated default?
-- Name the three AI-design tells explicitly and check for them: warm-cream + high-contrast serif + terracotta accent; near-black + single acid accent; broadsheet hairline-rule grid. If the design lands on one of these without the brief asking for it, that is a **blocking** finding.
+- Use the three AI-design tells as diagnostic prompts, not bans: warm-cream + high-contrast serif + terracotta accent; near-black + single acid accent; broadsheet hairline-rule grid. A resemblance without product-specific rationale is `should-fix`, not automatically **blocking**. Reserve blocking for verified-direction conflicts or material task, trust, readability, accessibility, or performance harm; fake proof remains blocking because it is false evidence.
 - Check order: does the hierarchy match the actual priority of the content → is spacing on a consistent scale → is the type scale deliberate → is colour doing work or decorating → is there a signature element, and is exactly one thing bold while everything else stays quiet.
 - Consistency sweep: same component, different spacing/radius/shadow across screens is the most common real defect.
 - Works for web screenshots, Figma descriptions, Flutter widget trees, and live code.
