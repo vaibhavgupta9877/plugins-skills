@@ -1,9 +1,11 @@
 ---
 name: animation-vocabulary
-description: Shared precise terminology for describing motion — easing curves, springs, stagger, orchestration, choreography. Load when discussing or specifying animation so descriptions are exact rather than vague.
+description: Use when precise terminology is needed to describe motion across web and Flutter. Do NOT use to choose or implement motion — that's `animate`, `animate/flutter-motion-craft`, or `flutter/flutter-animation-system`.
 ---
 
 # animation-vocabulary
+
+> Before doing anything else, read `/mnt/skills/public/frontend-design/SKILL.md` and follow it. It is the source of truth for aesthetic direction, typography, palette, restraint, and interface copy. This skill adds stack-specific execution on top of it and never contradicts it.
 
 ## Owns
 - The shared language for describing motion. Definitions only.

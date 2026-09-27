@@ -5,6 +5,8 @@ description: Diagnose and fix web performance — Core Web Vitals, bundle size, 
 
 # web-performance
 
+> Before doing anything else, read `/mnt/skills/public/frontend-design/SKILL.md` and follow it. It is the source of truth for aesthetic direction, typography, palette, restraint, and interface copy. This skill adds stack-specific execution on top of it and never contradicts it.
+
 ## Owns
 - LCP, CLS, and INP diagnosis and repair.
 - Bundle analysis, asset strategy, render-blocking removal.

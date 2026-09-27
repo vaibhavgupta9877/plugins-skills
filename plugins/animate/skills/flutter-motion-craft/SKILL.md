@@ -1,6 +1,6 @@
 ---
 name: flutter-motion-craft
-description: Decide what to animate in a Flutter app and how it should feel — timing, curves, choreography, platform-appropriate motion for Android, Windows, and Linux. Pairs with flutter/flutter-animation-system for the API.
+description: Use when deciding what to animate in Flutter and how it should feel. Do NOT use for Flutter animation APIs and mechanics — that's `flutter/flutter-animation-system`.
 ---
 
 # flutter-motion-craft

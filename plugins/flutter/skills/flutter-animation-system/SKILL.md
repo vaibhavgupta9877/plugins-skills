@@ -1,6 +1,6 @@
 ---
 name: flutter-animation-system
-description: Implement Flutter animation mechanics — AnimationController, Tween, curves, Hero, AnimatedBuilder, custom painters, transitions. Pairs with animate/flutter-motion-craft, which decides what should be animated.
+description: Use when implementing Flutter animation APIs and mechanics. Do NOT use to decide what to animate or how it should feel — that's `animate/flutter-motion-craft`.
 ---
 
 # flutter-animation-system
