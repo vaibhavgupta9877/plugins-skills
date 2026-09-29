@@ -1,0 +1,6 @@
+{
+  "name": "modernize",
+  "version": "0.1.0",
+  "description": "End-to-end S-tier modernization of an existing web page or Flutter screen: audit, direction, rebuild, and verification, orchestrating the other gupta-skills plugins.",
+  "author": { "name": "Gupta Technologies" }
+}

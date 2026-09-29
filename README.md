@@ -1,6 +1,6 @@
 # Gupta Technologies Claude Code Plugins
 
-An installable Claude Code marketplace of engineering, security, product direction, critique, motion, web, Next.js, Flutter, and Rust skills. The marketplace contains nine plugins and 47 skills.
+An installable Claude Code marketplace of engineering, security, product direction, critique, motion, web, Next.js, Flutter, Rust, and end-to-end modernization skills. The marketplace contains ten plugins and 49 skills.
 
 ## Install
 
@@ -29,6 +29,14 @@ For a UI/experience design task needing a design-ready brand foundation, a disti
 /plugin install product-direction@gupta-skills
 ```
 
+To modernize an existing page or screen to S-tier in one pass (it orchestrates the plugins above), install:
+
+```text
+/plugin install modernize@gupta-skills
+```
+
+Then run `/modernize:web-page` for a web page or `/modernize:flutter-screen` for a Flutter screen, naming the target.
+
 Claude Code may ask you to confirm an installation scope. Run `/reload-plugins` if prompted to activate newly installed plugins.
 
 ## Plugins
@@ -44,11 +52,12 @@ Claude Code may ask you to confirm an installation scope. Run `/reload-plugins` 
 | `next-saas` | Next.js T3 SaaS architecture, tRPC, Prisma, auth, billing, deployment, and observability. |
 | `flutter` | Flutter architecture, UI, animation mechanics, desktop support, and release. |
 | `rust-crate` | Rust crate architecture, API ergonomics, async services, FFI, publishing, and performance. |
+| `modernize` | End-to-end S-tier modernization of an existing web page or Flutter screen: audit, direction, rebuild, verify, with a coverage ledger. |
 
 ## Repository guide
 
 - `docs/00-INDEX.md` — ecosystem build specification, ownership boundaries, and verification requirements.
-- `docs/01-core-eng.md` through `docs/09-product-direction.md` — per-plugin specifications.
+- `docs/01-core-eng.md` through `docs/10-modernize.md` — per-plugin specifications.
 - `plugins/<plugin>/skills/<skill>/SKILL.md` — skill instructions.
 - `plugins/<plugin>/skills/<skill>/reference/` — optional on-demand references.
 

@@ -2,7 +2,7 @@
 
 **Owner:** Gupta Technologies (guptatechnologies.in)
 **Stacks:** Flutter (Android/Windows/Linux) · Rust crates (incl. public/open-source) · Next.js T3 SaaS (Vercel-primary) · company marketing site
-**Deliverable:** 9 Claude Code plugins, 47 skills.
+**Deliverable:** 10 Claude Code plugins, 49 skills.
 
 You are the building agent. Read this file completely before touching anything. Then build one plugin per spec file, in the order listed.
 
@@ -23,7 +23,7 @@ This is the single biggest defence against the collision problem that broke the 
 **R3 — Every skill body opens with an Owns / Does not own block.** Two short lists. No exceptions.
 
 **R4 — Do not duplicate `frontend-design`.**
-Every UI-facing skill (all of `web-ui`, all of `animate`, `ui-critique`, `motion-critique`, `flutter-ui-craft`, `product-direction/experience-direction`, and `product-direction/art-direction`) must open its body with:
+Every UI-facing skill (all of `web-ui`, all of `animate`, `ui-critique`, `motion-critique`, `flutter-ui-craft`, `product-direction/experience-direction`, `product-direction/art-direction`, and both `modernize` skills) must open its body with:
 
 > Before doing anything else, read `/mnt/skills/public/frontend-design/SKILL.md` and follow it. It is the source of truth for aesthetic direction, typography, palette, restraint, and interface copy. This skill adds stack-specific execution on top of it and never contradicts it.
 
@@ -90,31 +90,33 @@ If `flutter-motion-craft` needs vocabulary from `animation-vocabulary`, it point
 | 7 | `next-saas` | Next.js only | 5 | `06-next-saas.md` |
 | 8 | `flutter` | Flutter only | 5 | `07-flutter.md` |
 | 9 | `rust-crate` | Rust only | 6 | `08-rust-crate.md` |
+| 10 | `modernize` | end-to-end S-tier modernization of an existing web page or Flutter screen | 2 | `10-modernize.md` |
 
-**Build order:** `01` → `02` → `09` → `03` → `04` → `05` → `06` → `07` → `08`. Later plugins reference earlier ones.
+**Build order:** `01` → `02` → `09` → `03` → `04` → `05` → `06` → `07` → `08` → `10`. Later plugins reference earlier ones.
 
 ---
 
 ## 4. Ownership boundaries (memorise these)
 
-These four lines resolve ~90% of potential collisions:
+These five lines resolve ~90% of potential collisions:
 
 - **Direction vs making vs judging.** `product-direction` sets brand, design-language, and surface direction; `animate`, `web-ui`, `flutter`, `next-saas`, and `rust-crate` build; `critique` judges. A skill never owns both direction and implementation/review.
 - **Diff vs design.** `core-eng/code-review` reads a diff and checks correctness. `critique/*` audits a whole design or architecture with no diff required.
 - **System vs craft.** `flutter/flutter-animation-system` is API knowledge (AnimationController, curves, Hero, custom painters). `animate/flutter-motion-craft` is taste — what to animate, how long, what it should feel like.
 - **Always-on vs opt-in.** `core-eng`, `secure-ship`, `critique` load in every project. `product-direction` and the stack-specific plugins are opt-in per repo.
+- **Orchestrate vs own.** `modernize/*` owns only the order of work and the coverage ledger for an end-to-end modernization; every rule it applies lives in, and is loaded from, the owning skill.
 
 ---
 
 ## 5. Honest tiering
 
-47 skills is more than you will realistically use. Every skill in the spec files carries a tier:
+49 skills is more than you will realistically use. Every skill in the spec files carries a tier:
 
-- **CORE** (24 skills) — will fire constantly. Write these first, write them well, spend the full 200-line budget if needed.
+- **CORE** (26 skills) — will fire constantly. Write these first, write them well, spend the full 200-line budget if needed.
 - **SUPPORTING** (22 skills) — fire a few times per project. Keep to ~100 lines.
 - **THIN** (1 skill) — narrow scope, may rarely fire. Keep to ~60 lines. If after 60 days the THIN skill has never fired, delete it rather than maintaining it.
 
-Do not pretend all 47 are equal. Budget effort accordingly.
+Do not pretend all 49 are equal. Budget effort accordingly.
 
 ---
 
@@ -124,6 +126,7 @@ Only *enabled* plugins load their descriptions. Worst case per project:
 
 - Flutter project without product-direction: 16 always-on + 7 animate + 5 flutter = **28 descriptions** ≈ 1.0k tokens; with product-direction, add 3 for **31**.
 - Next.js project without product-direction: 16 + 7 + 5 + 5 = **33 descriptions** ≈ 1.2k tokens; with product-direction, add 3 for **36**.
+- `modernize` adds 2 descriptions to either case. It deliberately loads sub-skill bodies one phase at a time, so its body cost stays at one orchestrator plus one working skill.
 
 That is acceptable. What is *not* acceptable is three 600-line skill bodies firing at once — 5k+ tokens for one question. R1 is the entire defence. Enforce it.
 
@@ -133,7 +136,7 @@ That is acceptable. What is *not* acceptable is three 600-line skill bodies firi
 
 For each plugin, confirm:
 - [ ] Every `description` states both a positive and a negative trigger.
-- [ ] No two skills across all 9 plugins claim the same trigger phrase.
+- [ ] No two skills across all 10 plugins claim the same trigger phrase.
 - [ ] Every body has Owns / Does not own.
 - [ ] Every UI-facing skill has the R4 `frontend-design` directive as its first instruction.
 - [ ] No `SKILL.md` exceeds 200 lines. Report actual line counts in a table.

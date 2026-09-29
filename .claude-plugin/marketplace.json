@@ -60,6 +60,12 @@
       "description": "Rust crate engineering with a public-crate bias: structure, API ergonomics, async services, FFI bridges to Flutter, crates.io publishing, and performance and unsafe review.",
       "source": "./plugins/rust-crate",
       "category": "development"
+    },
+    {
+      "name": "modernize",
+      "description": "One-pass S-tier modernization of an existing web page or Flutter screen: audit, direction, rebuild, and verify by orchestrating the other gupta-skills plugins, with a coverage ledger so nothing is missed.",
+      "source": "./plugins/modernize",
+      "category": "design"
     }
   ]
 }
