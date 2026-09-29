@@ -44,6 +44,18 @@ oriented; on exit they have already decided and are waiting.
 
 Built-in `ease-out` is too weak for a deliberate animation. Use the custom curve.
 
+**Marketing / editorial surfaces** add signature curves when the project's `Design language` names
+them (observed on 2026 award sites; see
+`plugins/product-direction/skills/art-direction/reference/design-language-2026.md` §6):
+
+```css
+--ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);     /* headline line reveals, page transitions */
+--ease-back-out: cubic-bezier(0.34, 1.56, 0.64, 1); /* playful pops and toys only — never text blocks */
+--ease-weighty:  cubic-bezier(0.5, 0.1, 0, 1);      /* heavy, authoritative moves */
+```
+
+A project uses one tempo class (snappy / editorial / cinematic). Product UI stays on the table above.
+
 ---
 
 ## Stagger

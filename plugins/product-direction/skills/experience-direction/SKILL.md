@@ -12,6 +12,7 @@ description: Use when translating approved product/brand context into direction 
 
 ## Does not own
 - Product/brand foundation → `brand-foundation`.
+- Site-wide design language (premise, type, colour, layout grammar, motion signature) → `art-direction`.
 - Multi-page site architecture/navigation → optional host skill `site-architecture`, when available.
 - URL/screenshot reference study → optional host skill `tastemaker`, when available.
 - UI, motion implementation, or critique → `web-ui/*`, `flutter/*`, `animate/*`, `critique/*`.
@@ -22,9 +23,9 @@ Every material design recommendation traces to an evidenced user task, product t
 
 ## Inputs and workflow
 
-1. Read `docs/product-direction.md` when it exists and use only the matching brand/surface sections. If foundational context is missing, route to `brand-foundation`; do not invent it here.
+1. Read `docs/product-direction.md` when it exists and use only the matching brand/surface sections and the `Design language` section when present. If foundational context is missing, route to `brand-foundation`; do not invent it here.
 2. Classify the surface (marketing narrative, app shell/data view, transactional form, editor, or state screen) and record its actual use frequency and primary user task.
-3. Build the direction around the task and evidence. Choose a visual idea only when it follows from product truth; explicitly choose no motif when none is earned. Do not invent product features, data, roles, metrics, or screens to make a direction feel complete.
+3. Build the direction around the task and evidence. Choose a visual idea only when it follows from product truth; explicitly choose no motif when none is earned. When a `Design language` section exists, apply it to this surface (which parts of its motion and interaction signature this surface uses, and which it drops) rather than inventing a competing style; when none exists and the surface needs a distinctive look, route to `art-direction`. Do not invent product features, data, roles, metrics, or screens to make a direction feel complete.
 4. For a raw URL or screenshot, hand it to Tastemaker for study when that host skill is available and consume its approved findings. If unavailable, request an approved report or screenshot and mark uninspected observations Unknown; use only user-stated preferences in the meantime. Do not claim direct inspection. Transfer only principles that fit the product task; never copy identity, copy, assets, or exact sequences. Read `reference/case-study-principles.md` when its curated examples are relevant.
 5. Recommend interaction or motion only when it helps the stated task. Frequent-use screens default to immediate, scannable states; any exceptional motion needs a named purpose and accessible static/reduced-motion behavior.
 6. Update only the matching surface section in `docs/product-direction.md`. Ask only high-impact questions; label unresolved decisions rather than blocking useful provisional guidance.
@@ -62,6 +63,7 @@ Keep the section at or below 500 words. Every material bullet begins with one al
 | Marketing narrative | Carry a product-truth-led story; one visual idea can earn a larger moment. |
 | Daily task UI | Prioritize the primary task, scanability, keyboard/touch paths, and instant usable states. |
 | Missing brand context | Use `brand-foundation`; label unknowns meanwhile. |
+| Missing or generic visual language | Use `art-direction`; this brief applies it per surface. |
 | Raw URL/screenshot reference | Use `tastemaker` for study, then adapt only relevant principles. |
 
 ## Example

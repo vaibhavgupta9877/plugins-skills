@@ -1,6 +1,6 @@
 # Gupta Technologies Claude Code Plugins
 
-An installable Claude Code marketplace of engineering, security, product direction, critique, motion, web, Next.js, Flutter, and Rust skills. The marketplace contains nine plugins and 46 skills.
+An installable Claude Code marketplace of engineering, security, product direction, critique, motion, web, Next.js, Flutter, and Rust skills. The marketplace contains nine plugins and 47 skills.
 
 ## Install
 
@@ -23,7 +23,7 @@ Install the stack-specific plugins that fit the project:
 /plugin install rust-crate@gupta-skills
 ```
 
-For a UI/experience design task needing a design-ready brand foundation or substantial surface redesign, optionally install:
+For a UI/experience design task needing a design-ready brand foundation, a distinctive award-grade design language, or a substantial surface redesign, optionally install:
 
 ```text
 /plugin install product-direction@gupta-skills
@@ -37,7 +37,7 @@ Claude Code may ask you to confirm an installation scope. Run `/reload-plugins` 
 |---|---|
 | `core-eng` | Requirements, specs, code review, test strategy, debugging, and Git workflow; stack-agnostic. |
 | `secure-ship` | Threat modeling, secrets and environment handling, dependency risk, and production-readiness gates. |
-| `product-direction` | Design-ready brand context and surface direction for product UI/experience work across stacks. |
+| `product-direction` | Design-ready brand context, a distinctive (non-generic) design language, and surface direction for product UI/experience work across stacks. |
 | `critique` | Judgment-only reviews of UI, motion, accessibility, architecture, APIs, and copy. |
 | `animate` | Motion decisions and implementation across web and Flutter. |
 | `web-ui` | Web design systems, landing pages, UX copy, design engineering, and performance. |

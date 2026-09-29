@@ -24,7 +24,7 @@ description: Define, extend, or audit the design token system and component libr
 **Stack assumption:** Next.js App Router + TypeScript + Tailwind + shadcn/ui. **Detect and follow the
 repo's actual setup**; do not impose this on a repo that differs.
 
-If `docs/product-direction.md` has a Brand foundation section, read it before tokenizing; if not, use the current brief and the approved `frontend-design` direction. Only explicit, approved visual decisions (for example, a named colour or type choice) become token values. Voice and product-category context can inform token names, meanings, and density, but do not determine colours, font families, radii, or elevation. For unresolved visual choices, flag a decision needed; never infer values from voice alone.
+If `docs/product-direction.md` has a `Design language` section, its approved (`Verified`) type, colour, and easing values become token values directly. If it has a Brand foundation section, read it before tokenizing; if not, use the current brief and the approved `frontend-design` direction. Only explicit, approved visual decisions (for example, a named colour or type choice) become token values. Voice and product-category context can inform token names, meanings, and density, but do not determine colours, font families, radii, or elevation. For unresolved visual choices, flag a decision needed; never infer values from voice alone.
 
 ---
 
@@ -89,6 +89,13 @@ general use, 1.333+ when the display type is doing real work. One ratio, one bas
 
 Each role carries size, line height, weight, letter-spacing, and its font family together. Line
 height tightens as size grows — 1.5–1.6 for body, 1.1–1.2 for display.
+
+**Marketing display roles are fluid.** Size *and* letter-spacing both `clamp()` between a min and max
+viewport (e.g. display `clamp(3.5rem, 10vw + 1rem, 10rem)` with tracking tightening toward −0.03em);
+uppercase mono label roles carry positive tracking (+0.08–0.28em). Values come from the `Design
+language` section when present. Named easings (`--ease-out-expo: cubic-bezier(.16,1,.3,1)` etc.) and
+alternate ground themes (`[data-theme="…"]` token sets, each with its own tuned muted inks) are tokens
+too, never inline literals.
 
 Cap the scale at what you actually use. Nine roles that exist and are used beat sixteen where five
 are guesses.

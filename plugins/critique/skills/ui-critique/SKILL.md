@@ -24,7 +24,7 @@ description: Review a UI screen, mockup, or component for hierarchy, spacing, ty
 **This skill produces findings. It does not write production code.** If the user then says "fix it,"
 control passes to the relevant building skill.
 
-When `docs/product-direction.md` exists, use its verified Brand foundation and matching surface section when present. If no surface section exists, review the actual screen and known brief, state any resulting scope limit, and do not infer a direction violation from a missing section. Keep assumptions distinct from facts; palette/type resemblance alone is not automatically wrong.
+When `docs/product-direction.md` exists, use its verified Brand foundation, `Design language`, and matching surface section when present; check execution against the language's refusals, type, colour, and motion signature. If no surface section exists, review the actual screen and known brief, state any resulting scope limit, and do not infer a direction violation from a missing section. Keep assumptions distinct from facts; palette/type resemblance alone is not automatically wrong.
 
 ---
 
@@ -73,6 +73,11 @@ subject-specific material, instrument, artifact, or vernacular that could ground
 direction alone is not `blocking` unless it also causes a material task, trust, or accessibility harm.
 Do not infer competing signatures or add token/documentation nits without visible evidence. If the
 honest result is no finding, say so and stop.
+
+For marketing, portfolio, or "make it premium / not AI-looking" reviews, also run the 18-tell gate and
+scoring in `plugins/product-direction/skills/art-direction/reference/anti-slop.md` (count tells; 3+
+means the design language is underspecified — say so as one finding and route to `art-direction`
+rather than listing pixel fixes). The same evidence standard applies.
 
 ---
 

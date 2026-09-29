@@ -50,4 +50,6 @@ The studio case describes a modular sign expanded into a visual identity system,
 - Wembi studio case study: https://www.e-t.studio/works/wembi
 - Wembi Awwwards entry: https://www.awwwards.com/sites/wembi
 
-**Access note:** `moneyincheck.org` did not return a readable body through direct fetch, and the browser tool could not launch in the research environment. Its notes rely on indexed text and Cloudstudio's case study, not direct responsive/motion inspection. The Awwwards nominees page is a changing collection, not a ranking; the selected award-winning examples are illustrative, not an exhaustive nominee audit.
+**Update 2026-09-29:** the live HTML/CSS/JS of Money in Check, Cloudstudio, Boon, Marcus Lorenzet, and Oxigen was read as source (not rendered). Observed type, colour, easing, and stack details are in `../../art-direction/reference/design-language-2026.md`, and the transferable grammars in `../../art-direction/reference/archetypes.md`.
+
+**Original access note (2026-09-27):** `moneyincheck.org` did not return a readable body through direct fetch, and the browser tool could not launch in the research environment. Its notes rely on indexed text and Cloudstudio's case study, not direct responsive/motion inspection. The Awwwards nominees page is a changing collection, not a ranking; the selected award-winning examples are illustrative, not an exhaustive nominee audit.

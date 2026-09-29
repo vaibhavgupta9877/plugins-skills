@@ -11,7 +11,7 @@ description: Use when product UI/experience design needs a sourced brand foundat
 ## Does not own
 - Full product positioning, GTM, campaign strategy, or customer-research execution. Reuse approved host-skill outputs when available; if those skills are unavailable, ask for approved source material rather than reproducing full strategy or research.
 - Surface-specific experience briefs → `experience-direction`.
-- Visual styling → `frontend-design`; UI implementation or critique → `web-ui/*`, `flutter/*`, `critique/ui-critique`.
+- Visual styling → `frontend-design` and `art-direction` (design language); UI implementation or critique → `web-ui/*`, `flutter/*`, `critique/ui-critique`.
 
 ## Core principle
 

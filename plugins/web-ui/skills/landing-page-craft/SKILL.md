@@ -35,7 +35,7 @@ the user cannot answer, make a reasonable assumption, state it in a line, and co
 - **Proof available**: real logos, testimonials, numbers, case studies. What actually exists.
 - **Constraints**: brand voice, existing design direction, mobile priority.
 
-If `docs/product-direction.md` exists, read its Brand foundation and matching surface section when present. If no surface section exists, rely on the current brief and existing site; the missing section does not block page craft. Reuse verified claims, keep assumptions provisional, and do not repeat answered intake. Invoke `experience-direction` only when the user requests a separate surface-direction brief. This skill owns marketing-page structure and conversion decisions.
+If `docs/product-direction.md` exists, read its Brand foundation, `Design language`, and matching surface section when present. The Design language's premise, refusals, type, colour, and motion signature govern every visual choice on the page. If no surface section exists, rely on the current brief and existing site; the missing section does not block page craft. Reuse verified claims, keep assumptions provisional, and do not repeat answered intake. Invoke `experience-direction` only when the user requests a separate surface-direction brief. This skill owns marketing-page structure and conversion decisions.
 
 ---
 
@@ -44,6 +44,11 @@ If `docs/product-direction.md` exists, read its Brand foundation and matching su
 This is the core of the skill, and it comes straight from `frontend-design`: **open with the most
 characteristic thing in the subject's world** — a headline, an image, a live demo, an interactive
 moment, whatever the subject calls for.
+
+For a premium/award-grade page, choose the hero *shape* from the premise — type-as-image, artifact,
+world, roster, or maxim — using `reference/premium-section-patterns.md`, which also covers
+numbered buckets, index rows, method steps, and footer-as-finale. If the page has no design language
+and the user wants it distinctive, route to `product-direction/art-direction` first.
 
 **"Big number + small label + gradient accent" is the template answer.** Use it only if it is
 genuinely the best option for this brief, and be able to say why.
@@ -108,7 +113,9 @@ keeps diffs reviewable and control in the user's hands.
 
 **Every section having an effect is the failure mode.** It is also the most reliable tell that a page
 was generated rather than designed. Reveals elsewhere stay subtle and fast: 200–300ms, 8–24px
-translate, opacity — never 600ms fades and large slide-ins.
+translate, opacity — never 600ms fades and large slide-ins. The exception is a design language with
+an editorial or cinematic tempo: headline line-mask reveals may run 600–900ms (see
+`animate/scroll-motion` Step 8); body copy and cards stay fast.
 
 Write the moment as a spec — what it is, what it communicates, where it sits — not as an
 implementation.

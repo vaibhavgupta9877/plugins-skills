@@ -21,7 +21,7 @@
     },
     {
       "name": "product-direction",
-      "description": "Opt-in design-ready brand context and product-surface direction across stacks; implementation remains in existing stack plugins.",
+      "description": "Opt-in design-ready brand context, award-grade design language, and product-surface direction across stacks; implementation remains in existing stack plugins.",
       "source": "./plugins/product-direction",
       "category": "design"
     },

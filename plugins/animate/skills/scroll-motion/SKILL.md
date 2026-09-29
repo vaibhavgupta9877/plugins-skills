@@ -19,7 +19,7 @@ description: Build scroll-triggered reveals, scroll-scrubbed sequences, parallax
 - Page structure and section order → `web-ui/landing-page-craft` (it specifies the moment; this skill
   builds it).
 
-If `docs/product-direction.md` has a matching surface section, read its motion purposes and constraints. If that section is absent, use the current task and this skill's frequency gate; missing direction is not permission to add narrative or cinematic motion. Any motion remains subject to this skill's accessibility and performance checks.
+If `docs/product-direction.md` has a matching surface section or a `Design language` section, read its motion purposes, tempo, easings, and constraints. If that section is absent, use the current task and this skill's frequency gate; missing direction is not permission to add narrative or cinematic motion. Any motion remains subject to this skill's accessibility and performance checks.
 
 ---
 
@@ -160,6 +160,15 @@ Also check: `100vh` on mobile is wrong once the URL bar collapses — use `100dv
 or the pin will shift mid-scroll.
 
 ---
+
+## Step 8 — Award-grade narrative surfaces
+
+When the surface is marketing/editorial/portfolio narrative and the design language declares an
+**editorial or cinematic tempo**, read `reference/award-grade-choreography.md` for: one shared ticker
+(Lenis + GSAP + canvas), line-mask headline reveals, meaningful loading curtains, View Transitions
+page transitions, fixed-canvas chapters, hover-revealed index media, and ScrollTrigger pinning.
+Those tempos lengthen *headline* reveals (600–900ms, expo-out) — Step 3's 200–300ms still governs
+everything else, and the one-scrubbed-moment budget still holds.
 
 ## Output
 
